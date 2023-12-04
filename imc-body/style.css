@@ -3,6 +3,8 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'roboto', sans-serif;
+  font-size: 1.6rem;
+  line-height: 2rem;
 }
 
 :root {
@@ -15,15 +17,18 @@
   --ot-input: #02799d;
   --bd-input: rgba(73, 80, 87, .3);
   --tt-placeholder: rgba(73, 80, 87, .5);
+  --bg-input: #dce2e9;
+  
   --tt-button: white;
   --bg-button: #02799d;
+  --bg-button-hover: #005670;
+
   --bg-error: #f03e3e;
   --tt-error: white;
 }
 
 body {
   background-color: #040924;
-  font-size: 1.6rem;
 }
 
 .container {
@@ -41,3 +46,114 @@ body {
   box-shadow: 0 .2rem .4rem rgba(0, 0, 0, .1);
   border-radius: .6rem;
 }
+
+.title {
+  font-size: 3.2rem;
+  line-height: 4rem;
+}
+
+form {
+  width: 30rem;
+}
+
+form h1 {
+  margin-bottom: 3.2rem;
+  color: var(--tt-heading);
+}
+
+form label {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: var(--tt-label);
+  margin-bottom: .8rem;
+  display: block;
+}
+
+form input {
+  width: 100%;
+  border: 1px solid var(--bd-input);
+  background-color: var(--bg-input);
+  padding: 1.6rem;
+  border-radius: .4rem;
+}
+
+form input:focus {
+  outline: 2px solid var(--ot-input);
+}
+
+form input::placeholder {
+  color: var(--tt-placeholder);
+}
+
+.input-wrapper + .input-wrapper {
+  margin-top: 1.6rem;
+}
+
+form button {
+  margin-top: 3.2rem;
+  padding: 1.6rem;
+  width: 100%;
+
+  border-radius: .4rem;
+  border: none;
+  background-color: var(--bg-button);
+  color: var(--tt-button);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .8rem;
+
+  font-weight: bold;
+  font-size: 1.6rem;
+
+  cursor: pointer;
+
+  transition: background .3s;
+}
+
+form button:hover {
+  background-color: var(--bg-button-hover);
+}
+
+/* Modal */
+
+.modal-wrapper.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-wrapper {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.70);
+  /* top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0; */
+  inset: 0; /*Ele é um atalho para as propriedades do position*/
+  display: grid;
+  place-content: center;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal {
+  position: relative;
+}
+
+.modal button {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+
+  cursor: pointer;
+  transition: transform .3s;
+}
+
+.modal button:hover {
+  transform: scale(1.1);
+}
+
