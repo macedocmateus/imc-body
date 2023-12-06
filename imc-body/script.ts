@@ -8,11 +8,11 @@ const inputHeight = document.querySelector('#height') as HTMLInputElement;
 // 3 maneiras de criar e atribuir funções a um evento
 
 // 1
-form.onsubmit  = function(event) { // padrão do submit em um formulário é enviar os dados e recarregar a página
+form.onsubmit  = function(e) { // padrão do submit em um formulário é enviar os dados e recarregar a página
   
-  event.preventDefault();
+  e.preventDefault();
   
-  console.log(event);
+  console.log(e);
 }
 
 // 2
