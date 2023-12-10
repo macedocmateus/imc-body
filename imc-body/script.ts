@@ -5,19 +5,8 @@ const form = document.querySelector('form')!; // o ponto de exclamação é para
 const inputWeight = document.querySelector('#weight') as HTMLInputElement; // o 'as' funciona parecido com exclamação mas o tipo de dado é definido pelo programador
 const inputHeight = document.querySelector('#height') as HTMLInputElement;
 
+import { Modal } from './modal.ts';
 // é constante criada sendo ela um objeto com 5 itens, 2 desses 5 itens são funções (open , close) e essas funções estão apenas registradas sem execução
-const Modal = {
-    wrapper: document.querySelector('.modal-wrapper') as HTMLDivElement,
-    message: document.querySelector('.modal .title span') as HTMLSpanElement,
-    buttonClose: document.querySelector('.modal .close') as HTMLButtonElement,
-
-    open() {
-        Modal.wrapper.classList.add('open'); // remove a classe e a estilização feito no open
-    },
-    close() {
-        Modal.wrapper.classList.remove('open'); // remove a classe e a estilização feito no open
-    },
-};
 
 // 3 maneiras de criar e atribuir funções a um evento
 
@@ -36,10 +25,6 @@ form.onsubmit = function (event) {
 
     Modal.message.innerText = message;
     Modal.open(); // a função open sendo executada da criação do objeto Modal
-};
-
-Modal.buttonClose.onclick = () => {
-    Modal.close(); // a função close sendo executada da criação do objeto Modal
 };
 
 function IMC(weight: number, height: number) {

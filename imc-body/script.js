@@ -1,21 +1,10 @@
-"use strict";
 // variáveis - variables
 // pegando informações para manipular depois
 const form = document.querySelector('form'); // o ponto de exclamação é para a constante pegar um tipo de dado diferente de null, no caso o const form pegou HTMLFormElement
 const inputWeight = document.querySelector('#weight'); // o 'as' funciona parecido com exclamação mas o tipo de dado é definido pelo programador
 const inputHeight = document.querySelector('#height');
+import { Modal } from './modal.js';
 // é constante criada sendo ela um objeto com 5 itens, 2 desses 5 itens são funções (open , close) e essas funções estão apenas registradas sem execução
-const Modal = {
-    wrapper: document.querySelector('.modal-wrapper'),
-    message: document.querySelector('.modal .title span'),
-    buttonClose: document.querySelector('.modal .close'),
-    open() {
-        Modal.wrapper.classList.add('open'); // remove a classe e a estilização feito no open
-    },
-    close() {
-        Modal.wrapper.classList.remove('open'); // remove a classe e a estilização feito no open
-    },
-};
 // 3 maneiras de criar e atribuir funções a um evento
 // 1
 form.onsubmit = function (event) {
@@ -28,11 +17,8 @@ form.onsubmit = function (event) {
     Modal.message.innerText = message;
     Modal.open(); // a função open sendo executada da criação do objeto Modal
 };
-Modal.buttonClose.onclick = () => {
-    Modal.close(); // a função close sendo executada da criação do objeto Modal
-};
 function IMC(weight, height) {
-    return (weight / Math.pow((height / 100), 2)).toFixed(2);
+    return (weight / (height / 100) ** 2).toFixed(2);
 }
 // 2
 // form?.onsubmit = event => {} // se tiver um argumento só vc pode retirar os colchetes
