@@ -19,12 +19,24 @@ form.onsubmit = function (event) {
     const weight = parseInt(inputWeight.value); // .value é para capturar o valor
     const height = parseInt(inputHeight.value);
 
+    const showAlertError = notANumber(weight) || notANumber(height);
+
+    if (showAlertError) {
+        console.log('mostrar a tela da mensagem de erro');
+    }
+
+    return;
+
     const result = IMC(weight, height);
     const message = `Seu IMC é de ${result}`;
 
     Modal.message.innerText = message;
     Modal.open(); // a função open sendo executada da criação do objeto Modal
 };
+
+function notANumber(value: number | string) {
+    return isNaN(value as number) || value == '';
+}
 
 function IMC(weight: number, height: number) {
     return (weight / (height / 100) ** 2).toFixed(2);
