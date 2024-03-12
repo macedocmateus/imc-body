@@ -13,7 +13,7 @@ Projeto pessoal utilizando conceitos de ES6 módulos, DOM e Typescript.
 <br>
 
 <p align="center">
-  <img alt="Interface de um sistema de calculo de índice de massa corporal" src="./assets/capa-readme.jpg" width="100%">
+  <img alt="Interface de um sistema de calculo de índice de massa corporal" src="./public/assets/capa-readme.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
