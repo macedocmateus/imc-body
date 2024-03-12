@@ -28,7 +28,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O IMC Body é uma aplicação para extrair o índice de massa corporal do usuário. Clique <a href="https://imc-body-4xs7n0pmh-mateus-projects-e6e374db.vercel.app/" target="_blank" rel="noopener noreferrer">aqui</a> para testar a página.
+O IMC Body é uma aplicação para extrair o índice de massa corporal do usuário. Clique <a href="https://imc-body-chi.vercel.app/" target="_blank" rel="noopener noreferrer">aqui</a> para testar a página.
 
 ## 🎨 Layout
 
