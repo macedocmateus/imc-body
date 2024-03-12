@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+            rel="stylesheet"
+        />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>IMC Body</title>
+        <script src="script.js" type="module" defer></script>
+        <!--defer serve para o projeto ler todo o html primeiro para depois ler o javascript -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="alert-error">Digite somente números</div>
+
+        <div class="container">
+            <div class="card">
+                <form>
+                    <h1 class="title">Cálculo de IMC</h1>
+                    <div class="input-wrapper">
+                        <label for="weight">Peso (kg)</label>
+                        <input id="weight" type="text" placeholder="60" />
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="height">Altura (cm)</label>
+                        <input id="height" type="text" placeholder="165" />
+                    </div>
+
+                    <button type="submit">
+                        Calcular IMC
+                        <img
+                            src="./assets/arrow.svg"
+                            alt="seta branca apontada para direita"
+                        />
+                    </button>
+                </form>
+            </div>
+
+            <div class="modal-wrapper">
+                <div class="modal card">
+                    <h2 class="title">
+                        <span>Seu IMC é de 28</span>
+                    </h2>
+                    <button class="close">
+                        <img
+                            src="./assets/close.svg"
+                            alt="x de fechar o janela"
+                        />
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<h1 align="center"> 🥼 IMC Body 🥼</h1>
+
+<p align="center">
+Projeto pessoal utilizando conceitos de ES6 módulos, DOM e Typescript.
+</p>
+
+<p align="center">
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;
+</p>
+
+<br>
+
+<p align="center">
+  <img alt="Interface de um sistema de calculo de índice de massa corporal" src="./assets/capa-readme.jpg" width="100%">
+</p>
+
+## 🚀 Tecnologias
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+-   HTML e CSS
+-   Javascript
+-   Typescript
+-   Git e Github
+-   Figma
+
+## 💻 Projeto
+
+O IMC Body é uma aplicação para extrair o índice de massa corporal do usuário. Clique <a href="" target="_blank" rel="noopener noreferrer">aqui</a> para testar a página.
+
+## 🎨 Layout
+
+Clique <a href="https://www.figma.com/file/CCgWaOcpJIIXqvjXWCvH5v/IMC-Copy?fuid=1050974991944149827" target="_blank" rel="noopener noreferrer">aqui</a> para conhecer a prototipagem do projeto.
+<br>
+<br>
+<br>
+<br>
+
+<p align="center">
+Desenvolvido com ♥ by Mateus de Castro Macedo 👨‍💻
+</p>
